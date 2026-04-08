@@ -47,4 +47,4 @@ Your task is to:
 7. Output ONLY the complete HTML code.
 
 Dataset:
-[Paste your CSV data here]
+student performance.csv
