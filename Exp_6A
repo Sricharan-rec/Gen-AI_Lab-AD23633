@@ -1,0 +1,25 @@
+| Q.No | Question      | Prompt Type | Model Response | Actual Answer | Correct/Incorrect | Error Type | Remarks             |
+| ---- | ------------- | ----------- | -------------- | ------------- | ----------------- | ---------- | ------------------- |
+| 1    | Babysitting   | Zero-shot   | $10            | $10           | ✅ Correct         | None       | Showed reasoning    |
+| 1    |               | Few-shot    | $10            | $10           | ✅ Correct         | None       | Followed example    |
+| 1    |               | CoT         | $10            | $10           | ✅ Correct         | None       | Very clear steps    |
+| 2    | Letters/year  | Zero-shot   | 624            | 624           | ✅ Correct         | None       | Multi-step correct  |
+| 2    |               | Few-shot    | 624            | 624           | ✅ Correct         | None       | Pattern-based       |
+| 2    |               | CoT         | 624            | 624           | ✅ Correct         | None       | Well structured     |
+| 3    | Reading time  | Zero-shot   | 5 hours        | 5 hours       | ✅ Correct         | None       | Rate problem solved |
+| 3    |               | Few-shot    | 5 hours        | 5 hours       | ✅ Correct         | None       | Consistent method   |
+| 3    |               | CoT         | 5 hours        | 5 hours       | ✅ Correct         | None       | Detailed steps      |
+| 4    | Flowers %     | Zero-shot   | 75%            | 75%           | ✅ Correct         | None       | Logical breakdown   |
+| 4    |               | Few-shot    | 75%            | 75%           | ✅ Correct         | None       | Formula applied     |
+| 4    |               | CoT         | 75%            | 75%           | ✅ Correct         | None       | Clear explanation   |
+| 5    | Starfish arms | Zero-shot   | 49             | 49            | ✅ Correct         | None       | Simple reasoning    |
+| 5    |               | Few-shot    | 49             | 49            | ✅ Correct         | None       | Followed pattern    |
+| 5    |               | CoT         | 49             | 49            | ✅ Correct         | None       | Step-by-step        |
+
+
+Expected Outcome
+
+Zero-shot prompting can solve simple problems but may struggle with complex multi-step reasoning tasks.
+Few-shot prompting improves answer quality by providing examples that guide the model.
+Chain-of-Thought prompting enhances reasoning clarity by generating step-by-step solutions.
+Some responses may still contain logical errors or incorrect calculations despite detailed explanations.
